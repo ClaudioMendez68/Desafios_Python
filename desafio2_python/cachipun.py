@@ -17,6 +17,7 @@ usuario= usuario.lower()
 while usuario != "piedra" and usuario != "papel" and usuario != "tijera":
     print("Jugada NO VÁLIDA")
     usuario= input("Ingresa tu jugada [piedra, papel o tijera]: ")
+    usuario= usuario.lower()
 
 # Se ejecuta la jugada si pasa la validación
 print(f"Jugaste: {usuario}")
