@@ -13,7 +13,7 @@ if len(argv) == 3:
 else:
     opcion = False
 
-def filtrar(precios, umbral, opcion = False):
+def filtrar(precios, umbral, opcion):
     filtro = []
     if opcion == 'menor':
         # Código alternativo SIN List Comprehension
