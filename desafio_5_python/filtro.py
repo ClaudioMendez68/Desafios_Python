@@ -7,12 +7,6 @@ precios = {'Notebook': 700000,
     'Escritorio': 135000,
     'Tarjeta de Video': 1500000}
 
-umbral = int(argv[1])
-if len(argv) == 3:
-    opcion = argv[2]
-else:
-    opcion = False
-
 def filtrar(precios, umbral, opcion):
     filtro = []
     if opcion == 'menor':
@@ -37,5 +31,11 @@ def filtrar(precios, umbral, opcion):
         print(f'Los productos mayores al umbral son: {', '.join(filtro)}')
     else:
         print('Lo sentimos, no es una operación válida')
+        
+umbral = int(argv[1])
+if len(argv) == 3:
+    opcion = argv[2]
+else:
+    opcion = False
 
 filtrar(precios, umbral, opcion)
