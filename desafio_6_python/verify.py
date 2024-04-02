@@ -2,6 +2,15 @@ import preguntas as p
 
 
 def verificar(alternativas, eleccion):
+    """Verifica si la respuesta entregada por el usuario es correcta e informa el resultado
+
+    Args:
+        alternativas (list): Lista de listas con alternativas
+        eleccion (str): Elección realizada por el usuario
+
+    Returns:
+        bool: Resultado de la verificación
+    """
     #devuelve el índice de elección dada
     eleccion = ['a', 'b', 'c','d'].index(eleccion)
     # generar lógica para determinar respuestas correctas

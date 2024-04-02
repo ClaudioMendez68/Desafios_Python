@@ -1,7 +1,12 @@
 import preguntas as p
 
 def print_pregunta(enunciado, alternativas):
-    
+    """Muestra listado de preguntas en formato quiz
+
+    Args:
+        enunciado (str): Enunciado de la pregunta
+        alternativas (list): Lista de listas con alternativas
+    """
     # Imprimir enunciado y alternativas
     ###############################################################
     print(enunciado[0])

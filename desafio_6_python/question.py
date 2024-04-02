@@ -10,6 +10,14 @@ opciones = {'basicas': [1,2,3],
 ###############################################
 
 def choose_q(dificultad):
+    """Escoge una pregunta según nivel de dificultad que no haya sido hecha con anterioridad
+
+    Args:
+        dificultad (str): Nivel de dificultad
+
+    Returns:
+        tuple: Lista con enunciado de una pregunta, lista de listas con alternativas
+    """
     #escoger preguntas por dificultad
     preguntas = p.pool_preguntas[dificultad]
     # usar opciones desde ambiente global

@@ -1,5 +1,14 @@
 
 def validate(opciones, eleccion):
+    """ Valida los valores ingresados,
+        repitiendo la petición hasta que los valores sean los correctos
+    Args:
+        opciones (list): Lista de valores a comparar
+        eleccion (Any): Opción a validar
+
+    Returns:
+        Any: Opción validada
+    """
     # Definir validación de eleccion
     ##########################################################################
     while eleccion not in opciones:
